@@ -1,4 +1,6 @@
-h1 {
-    color: red;
-    background-color: gray;
-}
+button {
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(41, 41, 41);
+  color: rgb(231, 231, 231);
+}/*# sourceMappingURL=style.css.map */

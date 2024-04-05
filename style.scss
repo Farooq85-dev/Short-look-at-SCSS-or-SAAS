@@ -1,0 +1,10 @@
+@mixin helloWorld() {
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(41, 41, 41);
+    color: rgb(231, 231, 231);
+}
+
+button {
+    @include helloWorld();
+}
