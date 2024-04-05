@@ -1,10 +1,29 @@
 @mixin helloWorld() {
-    border-radius: 10px;
+    border-radius: 20px;
     border: none;
+    padding: 10px 20px;
     background-color: rgb(41, 41, 41);
     color: rgb(231, 231, 231);
+    cursor: pointer
 }
+
+@mixin hoverBtn() {
+    background-color: rgb(27, 27, 27);
+}
+
+@mixin opacityBtn() {
+    opacity: 0.7
+}
+
 
 button {
     @include helloWorld();
+
+    &:hover {
+        @include hoverBtn();
+    }
+
+    &:active {
+        @include opacityBtn();
+    }
 }
