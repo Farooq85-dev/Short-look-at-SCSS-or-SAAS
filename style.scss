@@ -7,23 +7,11 @@
     cursor: pointer
 }
 
-@mixin hoverBtn() {
-    background-color: rgb(27, 27, 27);
-}
+$borderRadius: 10px;
+$paddingBtn: 5px 10px;
 
-@mixin opacityBtn() {
-    opacity: 0.7
-}
-
-
-button {
-    @include helloWorld();
-
-    &:hover {
-        @include hoverBtn();
-    }
-
-    &:active {
-        @include opacityBtn();
-    }
+#alert {
+    border: 2px solid black;
+    border-radius: $borderRadius;
+    padding: $paddingBtn;
 }

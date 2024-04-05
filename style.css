@@ -1,14 +1,5 @@
-button {
-  border-radius: 20px;
-  border: none;
-  padding: 10px 20px;
-  background-color: rgb(41, 41, 41);
-  color: rgb(231, 231, 231);
-  cursor: pointer;
-}
-button:hover {
-  background-color: rgb(27, 27, 27);
-}
-button:active {
-  opacity: 0.7;
+#alert {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 5px 10px;
 }/*# sourceMappingURL=style.css.map */
