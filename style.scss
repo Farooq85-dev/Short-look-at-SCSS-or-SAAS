@@ -7,11 +7,16 @@
     cursor: pointer
 }
 
-$borderRadius: 10px;
+//These are global Scope Variables.The have access to overall Syntactically Style Sheet.
+$borderRadius: 10px; 
 $paddingBtn: 5px 10px;
 
-#alert {
-    border: 2px solid black;
+#alert1 {
+    $borderRadius: 5px; //Local Scope. It will not accessed outside.
     border-radius: $borderRadius;
-    padding: $paddingBtn;
 }
+
+
+#alert2 {
+    border-radius: $borderRadius;
+}   

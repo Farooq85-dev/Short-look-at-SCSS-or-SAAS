@@ -1,5 +1,7 @@
-#alert {
-  border: 2px solid black;
+#alert1 {
+  border-radius: 5px;
+}
+
+#alert2 {
   border-radius: 10px;
-  padding: 5px 10px;
 }/*# sourceMappingURL=style.css.map */
