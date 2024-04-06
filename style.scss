@@ -1,22 +1,22 @@
-@mixin helloWorld() {
-    border-radius: 20px;
-    border: none;
-    padding: 10px 20px;
-    background-color: rgb(41, 41, 41);
-    color: rgb(231, 231, 231);
-    cursor: pointer
+//Variables in SCSS. They are both global and local Scope.
+
+//Local Scope Variable
+//Example:-
+#first {
+    $bgColor: red;
+    color: $bgColor;
 }
 
-//These are global Scope Variables.The have access to overall Syntactically Style Sheet.
-$borderRadius: 10px; 
-$paddingBtn: 5px 10px;
-
-#alert1 {
-    $borderRadius: 5px; //Local Scope. It will not accessed outside.
-    border-radius: $borderRadius;
+//We cannot acces the $bgColor variable outside due to local scope.
+//It's color will remain black.
+#second {
+    color: $bgColor;
 }
 
+//Global Scope Variables.The can access everwhere in the file.
+//Example:-
+$bgColorForth: rgb(47, 47, 6);
 
-#alert2 {
-    border-radius: $borderRadius;
-}   
+#fourth {
+    color: $bgColorForth;
+}
