@@ -13,10 +13,64 @@
     color: $bgColor;
 }
 
-//Global Scope Variables.The can access everwhere in the file.
+//Global Scope Variables.Can access everwhere in the file.
 //Example:-
-$bgColorForth: rgb(47, 47, 6);
-
-#fourth {
+$bgColorForth: rgb(143, 143, 0);
+.fourth {
     color: $bgColorForth;
 }
+
+//Nesting. Means when you write something inside of something else.
+nav {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        color: red;
+    }
+}
+
+/*@Mixins.It is just like a reuseable piece of code.
+Don't include space in the mixin name.Use Hyphen,underscore or write in camelCase.*/
+@mixin reUse1Code() {
+    border-radius: 10px;
+    border: 1px solid red;
+    background-color: rgb(181, 0, 0);
+}
+
+//use @include and write mixin-name to use this piece of code.
+button.first {
+    @include reUse1Code;
+}
+
+/*@Mixin with Parameters. It's biggest advantage is that to use them with 
+different values in different buttons.*/
+@mixin reUse2Code($radius, $border) {
+    border-radius: $radius;
+    border: $border;
+}
+
+button.second {
+    @include reUse2Code(10px, 1px solid red);
+}
+
+//Partials and Import.
+/*Partials means SASS file named with underscore before file name like _partial.scss. When you use a file you don’t need to include the file extension. 
+Sass is smart and will figure it out for you. Means not generated in main saas file but outside and use these files with import statement*/
+@import "";
+
+//Use Opeartors.
+/*Equality Opeartors:- "==, !="
+Rational Operators:- "<, >, <=, >="
+Numeric Operators:- "+, -, *, %, /"
+Booleans Operators:- "true, false"
+String Opeartor*/
+
+

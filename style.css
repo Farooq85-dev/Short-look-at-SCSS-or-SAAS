@@ -1,3 +1,13 @@
-#first {
-  color: red;
-}/*# sourceMappingURL=style.css.map */
+@charset "UTF-8";
+/*@Mixins.It is just like a reuseable piece of code.
+Don't include space in the mixin name.Use Hyphen,underscore or write in camelCase.*/
+/*@Mixin with Parameters. It's biggest advantage is that to use them with 
+different values in different buttons.*/
+button.second {
+  border-radius: 10px;
+  border: 1px solid red;
+}
+
+/*Partials means SASS file named with underscore before file name like _partial.scss. When you use a file you don’t need to include the file extension. 
+Sass is smart and will figure it out for you. Means not generated in main saas file but outside and use these files with import statement*/
+@i;/*# sourceMappingURL=style.css.map */
